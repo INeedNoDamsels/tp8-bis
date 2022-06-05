@@ -24,11 +24,11 @@ elif len(digitos) == 4:
 else:
     extra_b = 2
 
-if len(digitos) >= 3:
-    if (digitos[0] == digitos[2 + extra]) and (digitos[1] == digitos[1 + extra]):
-        print(f"¡{numero} es capicúa!")
-    else:
-        print(f"¡{numero} no es capicúa!")
+if (digitos[0] == digitos[2 + extra]) and (digitos[1] == digitos[1 + extra]):
+    print(f"¡{numero} es capicúa!")
+else:
+    print(f"¡{numero} no es capicúa!")
 
 for j in range(len(digitos)):
     print(f"{digitos[j]} {nombres[j + extra_b]}")
+    
